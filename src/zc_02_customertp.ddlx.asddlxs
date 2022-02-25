@@ -1,0 +1,56 @@
+@Metadata.layer: #CUSTOMER
+@UI.headerInfo: {
+    title.value: 'Name',
+    typeName: 'Customer',
+    typeNamePlural: 'Customers'
+}
+annotate view ZC_02_CustomerTP with
+{
+  /* Abschnitt */
+  @UI.facet: [{
+    type: #IDENTIFICATION_REFERENCE,
+    label: 'Customer Data',
+    position: 10
+  }, {
+    type: #LINEITEM_REFERENCE,
+    label: 'Bookings',
+    targetElement: '_Bookings',
+    position: 20
+  }]
+
+  /* Felder */
+  @UI.lineItem: [
+  { position: 10 },
+  { position: 20, type: #FOR_ACTION, dataAction: 'BOPF:INCREASE_DISCOUNT', label: 'Discount +5' },
+  { position: 30, type: #FOR_ACTION, dataAction: 'BOPF:DECREASE_DISCOUNT', label: 'Discount -5' }
+  ]
+  @UI.identification: [{ position: 10 }]
+  ID;
+
+  @UI.lineItem: [{ position: 20 }]
+  @UI.identification: [{ position: 20 }]
+  Name;
+
+  @UI.lineItem: [{ position: 30 }]
+  @UI.identification: [{ position: 30 }]
+  Street;
+
+  @UI.lineItem: [{ position: 40 }]
+  @UI.identification: [{ position: 40 }]
+  Postcode;
+
+  @UI.selectionField: [{ position: 10 }]
+  @UI.lineItem: [{ position: 50 }]
+  @UI.identification: [{ position: 50 }]
+  City;
+
+  @UI.selectionField: [{ position: 20 }]
+  @UI.lineItem: [{ position: 60 }]
+  @UI.identification: [{ position: 60 }]
+  Country;
+
+  @UI.lineItem: [{ position: 70 }]
+  @UI.identification: [{ position: 70 }]
+  Discount;
+
+}

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>Z02CUSTOMER</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+    <STEXT>Message Customer</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z02CUSTOMER</ARBGB>
+     <MSGNR>000</MSGNR>
+     <TEXT>Discount for customer increased successfully about &amp;1 %.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z02CUSTOMER</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>Discount for customer decreased successfully about &amp;1 %.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z02CUSTOMER</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>Increasing is not possible, customer has reached &amp;1 % discount.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z02CUSTOMER</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Decreasing is not possible, customer has reached &amp;1 % discount.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>Z02CUSTOMER</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>Discount is not allowed to be negative.</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

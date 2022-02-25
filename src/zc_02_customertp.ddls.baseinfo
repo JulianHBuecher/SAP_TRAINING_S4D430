@@ -7,9 +7,13 @@
 ],
 "ASSOCIATED":
 [
-"ZC_02_BOOKINGTP"
+"ZC_02_BOOKINGTP",
+"ZC_02_CITYVH"
 ],
 "BASE":
-[]
+[],
+"ANNO_REF":
+[],
+"VERSION":0
 }
 }
